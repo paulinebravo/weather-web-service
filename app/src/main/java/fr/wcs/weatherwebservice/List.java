@@ -2,17 +2,27 @@
 package fr.wcs.weatherwebservice;
 
 import java.util.ArrayList;
+import com.google.api.client.util.Key;
+
+
 
 public class List {
-
+    @Key
     private Integer dt;
+    @Key
     private Main main;
+    @Key
     private java.util.List<Weather> weather = new ArrayList<Weather>();
+    @Key
     private Clouds clouds;
+    @Key
     private Wind wind;
-    private Sys sys;
-    private String dtTxt;
+    @Key
     private Rain rain;
+    @Key
+    private Sys sys;
+    @Key
+    private String dtTxt;
 
     public Integer getDt() {
         return dt;
@@ -54,6 +64,14 @@ public class List {
         this.wind = wind;
     }
 
+    public Rain getRain() {
+        return rain;
+    }
+
+    public void setRain(Rain rain) {
+        this.rain = rain;
+    }
+
     public Sys getSys() {
         return sys;
     }
@@ -68,14 +86,6 @@ public class List {
 
     public void setDtTxt(String dtTxt) {
         this.dtTxt = dtTxt;
-    }
-
-    public Rain getRain() {
-        return rain;
-    }
-
-    public void setRain(Rain rain) {
-        this.rain = rain;
     }
 
 }

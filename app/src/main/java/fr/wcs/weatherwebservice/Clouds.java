@@ -1,13 +1,11 @@
 
 package fr.wcs.weatherwebservice;
 
-
 import com.google.api.client.util.Key;
 
 public class Clouds {
-
     @Key
-   private Integer all;
+    private Integer all;
 
     public Integer getAll() {
         return all;

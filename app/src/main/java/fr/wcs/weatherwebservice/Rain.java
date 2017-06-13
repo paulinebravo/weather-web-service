@@ -1,9 +1,10 @@
 
 package fr.wcs.weatherwebservice;
 
+import com.google.api.client.util.Key;
 
 public class Rain {
-
+    @Key
     private Double _3h;
 
     public Double get3h() {

@@ -1,9 +1,10 @@
 package fr.wcs.weatherwebservice;
-
+import com.google.api.client.util.Key;
 
 public class Wind {
-
+    @Key
     private Double speed;
+    @Key
     private Double deg;
 
     public Double getSpeed() {

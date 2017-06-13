@@ -1,24 +1,37 @@
 
 package fr.wcs.weatherwebservice;
 
+
 import com.google.api.client.util.Key;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CurrentWeatherModel {
-
-    @Key private Coord coord;
-    @Key private List<Weather> weather = new ArrayList<Weather>();
-    @Key private String base;
-    @Key private Main main;
-    @Key private Wind wind;
-    @Key private Clouds clouds;
-    @Key private Integer dt;
-    @Key private Sys sys;
-    @Key private Integer id;
-    @Key private String name;
-    @Key private Integer cod;
+    @Key
+    private Coord coord;
+    @Key
+    private java.util.List<Weather> weather = new ArrayList<Weather>();
+    @Key
+    private String base;
+    @Key
+    private Main main;
+    @Key
+    private Integer visibility;
+    @Key
+    private Wind wind;
+    @Key
+    private Clouds clouds;
+    @Key
+    private Integer dt;
+    @Key
+    private Sys sys;
+    @Key
+    private Integer id;
+    @Key
+    private String name;
+    @Key
+    private Integer cod;
 
     public Coord getCoord() {
         return coord;
@@ -28,11 +41,11 @@ public class CurrentWeatherModel {
         this.coord = coord;
     }
 
-    public List<Weather> getWeather() {
+    public java.util.List<Weather> getWeather() {
         return weather;
     }
 
-    public void setWeather(List<Weather> weather) {
+    public void setWeather(java.util.List<Weather> weather) {
         this.weather = weather;
     }
 
@@ -50,6 +63,14 @@ public class CurrentWeatherModel {
 
     public void setMain(Main main) {
         this.main = main;
+    }
+
+    public Integer getVisibility() {
+        return visibility;
+    }
+
+    public void setVisibility(Integer visibility) {
+        this.visibility = visibility;
     }
 
     public Wind getWind() {

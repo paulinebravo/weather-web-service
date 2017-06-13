@@ -2,8 +2,10 @@
 package fr.wcs.weatherwebservice;
 
 
-public class Sys {
+import com.google.api.client.util.Key;
 
+public class Sys {
+    @Key
     private String pod;
 
     public String getPod() {

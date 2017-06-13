@@ -1,16 +1,24 @@
 
 package fr.wcs.weatherwebservice;
 
+import com.google.api.client.util.Key;
 
 public class Main {
-
+    @Key
     private Double temp;
+    @Key
     private Double tempMin;
+    @Key
     private Double tempMax;
+    @Key
     private Double pressure;
+    @Key
     private Double seaLevel;
+    @Key
     private Double grndLevel;
+    @Key
     private Integer humidity;
+    @Key
     private Integer tempKf;
 
     public Double getTemp() {

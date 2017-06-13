@@ -1,11 +1,11 @@
 package fr.wcs.weatherwebservice;
 
 import java.util.ArrayList;
+import java.util.List;
 import com.google.api.client.util.Key;
 
 
 public class ForecastWeatherModel {
-
     @Key
     private String cod;
     @Key
@@ -13,10 +13,9 @@ public class ForecastWeatherModel {
     @Key
     private Integer cnt;
     @Key
-    private java.util.List< fr.wcs.weatherwebservice.List> list = new ArrayList< fr.wcs.weatherwebservice.List>();
+    private java.util.List<fr.wcs.weatherwebservice.List> list = new ArrayList<fr.wcs.weatherwebservice.List>();
     @Key
     private City city;
-
 
     public String getCod() {
         return cod;
@@ -42,11 +41,11 @@ public class ForecastWeatherModel {
         this.cnt = cnt;
     }
 
-    public java.util.List< fr.wcs.weatherwebservice.List> getList() {
+    public java.util.List<fr.wcs.weatherwebservice.List> getList() {
         return list;
     }
 
-    public void setList(java.util.List< fr.wcs.weatherwebservice.List> list) {
+    public void setList(java.util.List<fr.wcs.weatherwebservice.List> list) {
         this.list = list;
     }
 
@@ -59,4 +58,3 @@ public class ForecastWeatherModel {
     }
 
 }
-

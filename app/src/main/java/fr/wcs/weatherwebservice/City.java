@@ -2,14 +2,18 @@
 package fr.wcs.weatherwebservice;
 
 
+
 import com.google.api.client.util.Key;
 
 public class City {
-
-    @Key private Integer id;
-    @Key private String name;
-    @Key private Coord coord;
-    @Key private String country;
+    @Key
+    private Integer id;
+    @Key
+    private String name;
+    @Key
+    private Coord coord;
+    @Key
+    private String country;
 
     public Integer getId() {
         return id;

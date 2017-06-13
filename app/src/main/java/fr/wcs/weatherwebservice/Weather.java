@@ -2,11 +2,17 @@
 package fr.wcs.weatherwebservice;
 
 
-public class Weather {
 
+import com.google.api.client.util.Key;
+
+public class Weather {
+    @Key
     private Integer id;
+    @Key
     private String main;
+    @Key
     private String description;
+    @Key
     private String icon;
 
     public Integer getId() {

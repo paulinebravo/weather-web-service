@@ -1,12 +1,12 @@
 package fr.wcs.weatherwebservice;
 
-
 import com.google.api.client.util.Key;
 
 public class Coord {
-
-    @Key private Double lat;
-    @Key private Double lon;
+    @Key
+    private Double lat;
+    @Key
+    private Double lon;
 
     public Double getLat() {
         return lat;
